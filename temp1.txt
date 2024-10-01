@@ -1,0 +1,15 @@
+Declare
+celsius float;
+farenheit float;
+begin
+farenheit:=(celsius*9/5)+32
+celsius:=&celsius;
+if(farenheit<98.2) then
+dbms_output.put_line('No fever');
+if(farenheit>=98.2 and farenheit<102) then
+dbms_output.put_line('Mild fever');
+if(farenheit>102) then
+dbms_output.put_line('High fever');
+end if;
+end;
+/
